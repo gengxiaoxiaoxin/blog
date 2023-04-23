@@ -129,7 +129,7 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/blog/categories/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
@@ -155,7 +155,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://gengxiaoxiaoxin.github.io/blog/2023/04/22/%E8%AE%BE%E7%BD%AEWsl2%E5%B1%80%E5%9F%9F%E7%BD%91%E8%AE%BF%E9%97%AE/">
+    <link itemprop="mainEntityOfPage" href="https://gengxiaoxiaoxin.github.io/blog/2023/04/23/%E8%AE%BE%E7%BD%AEWsl2%E5%B1%80%E5%9F%9F%E7%BD%91%E8%AE%BF%E9%97%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars.githubusercontent.com/u/29268441">
@@ -173,7 +173,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/blog/2023/04/22/%E8%AE%BE%E7%BD%AEWsl2%E5%B1%80%E5%9F%9F%E7%BD%91%E8%AE%BF%E9%97%AE/" class="post-title-link" itemprop="url">未命名</a>
+          <a href="/blog/2023/04/23/%E8%AE%BE%E7%BD%AEWsl2%E5%B1%80%E5%9F%9F%E7%BD%91%E8%AE%BF%E9%97%AE/" class="post-title-link" itemprop="url">WSL2设置局域网访问</a>
         </h2>
 
         <div class="post-meta-container">
@@ -185,7 +185,16 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-04-22 20:50:10 / 修改时间：21:24:21" itemprop="dateCreated datePublished" datetime="2023-04-22T20:50:10+08:00">2023-04-22</time>
+      <time title="创建时间：2023-04-23 20:00:00 / 修改时间：20:50:36" itemprop="dateCreated datePublished" datetime="2023-04-23T20:00:00+08:00">2023-04-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/wsl2/" itemprop="url" rel="index"><span itemprop="name">wsl2</span></a>
+        </span>
     </span>
 
   
@@ -199,9 +208,10 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="设置Wsl2局域网访问"><a href="#设置Wsl2局域网访问" class="headerlink" title="设置Wsl2局域网访问"></a>设置Wsl2局域网访问</h2><p>默认wsl2通过宿主机localhost可以访问到wsl2中的服务，但是局域网其他机器就无法访问了。<br>好在微软在新版本已经支持配置wsl2网卡了。</p>
-<h3 id="安装hype-v"><a href="#安装hype-v" class="headerlink" title="安装hype-v"></a>安装hype-v</h3><p>TODO</p>
+<h3 id="安装hype-v"><a href="#安装hype-v" class="headerlink" title="安装hype-v"></a>安装hype-v</h3><p>控制面板-开启windows功能-Hype-v</p>
 <h4 id="Hype-V虚拟交换机配置"><a href="#Hype-V虚拟交换机配置" class="headerlink" title="Hype-V虚拟交换机配置"></a>Hype-V虚拟交换机配置</h4><p>新建一个虚拟交换机 WSLBridge 用于接下来使用<br><img src="https://cdn.nlark.com/yuque/0/2023/png/12734244/1675418925633-6fbd40ff-97fd-4305-891e-c97d3181fda4.png#averageHue=%23f0f0f0&clientId=u5cda0d69-78f2-4&from=paste&height=522&id=ucf9d51a0&name=image.png&originHeight=653&originWidth=880&originalType=binary&ratio=1&rotation=0&showTitle=false&size=99097&status=done&style=none&taskId=uc38f5405-9716-4300-b41f-6ff3360ed86&title=&width=704" alt="image.png"><br>在用户目录 %USERPROFILE% 下面创建一个配置文件 .wslconfig，按照如下配置方法设置网络</p>
-<p>::: tip<br>[wsl2]<br>networkingMode&#x3D;bridged<br>vmSwitch&#x3D;WSLBridge<br>ipv6&#x3D;true<br>:::<br>wsl –shutdown &amp;&amp; wsl 重启 WSL2，搞定。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[wsl2] </span><br><span class="line">networkingMode=bridged </span><br><span class="line">vmSwitch=WSLBridge </span><br><span class="line">ipv6=true</span><br></pre></td></tr></table></figure>
+<p><code>wsl --shutdown &amp;&amp; wsl</code> 重启 WSL2，搞定。</p>
 
       
     </div>
