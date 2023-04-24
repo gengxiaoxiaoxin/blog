@@ -186,9 +186,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2023-04-23 20:00:00 / 修改时间：20:50:36" itemprop="dateCreated datePublished" datetime="2023-04-23T20:00:00+08:00">2023-04-23</time>
+      <time title="创建时间：2023-04-23 20:00:00" itemprop="dateCreated datePublished" datetime="2023-04-23T20:00:00+08:00">2023-04-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-04-24 20:56:39" itemprop="dateModified" datetime="2023-04-24T20:56:39+08:00">2023-04-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -212,7 +218,7 @@
     <div class="post-body" itemprop="articleBody">
           <h2 id="设置Wsl2局域网访问"><a href="#设置Wsl2局域网访问" class="headerlink" title="设置Wsl2局域网访问"></a>设置Wsl2局域网访问</h2><p>默认wsl2通过宿主机localhost可以访问到wsl2中的服务，但是局域网其他机器就无法访问了。<br>好在微软在新版本已经支持配置wsl2网卡了。</p>
 <h3 id="安装hype-v"><a href="#安装hype-v" class="headerlink" title="安装hype-v"></a>安装hype-v</h3><p>控制面板-开启windows功能-Hype-v</p>
-<h4 id="Hype-V虚拟交换机配置"><a href="#Hype-V虚拟交换机配置" class="headerlink" title="Hype-V虚拟交换机配置"></a>Hype-V虚拟交换机配置</h4><p>新建一个虚拟交换机 WSLBridge 用于接下来使用<br><img src="https://cdn.nlark.com/yuque/0/2023/png/12734244/1675418925633-6fbd40ff-97fd-4305-891e-c97d3181fda4.png#averageHue=%23f0f0f0&clientId=u5cda0d69-78f2-4&from=paste&height=522&id=ucf9d51a0&name=image.png&originHeight=653&originWidth=880&originalType=binary&ratio=1&rotation=0&showTitle=false&size=99097&status=done&style=none&taskId=uc38f5405-9716-4300-b41f-6ff3360ed86&title=&width=704" alt="image.png"><br>在用户目录 %USERPROFILE% 下面创建一个配置文件 .wslconfig，按照如下配置方法设置网络</p>
+<h4 id="Hype-V虚拟交换机配置"><a href="#Hype-V虚拟交换机配置" class="headerlink" title="Hype-V虚拟交换机配置"></a>Hype-V虚拟交换机配置</h4><p>新建一个虚拟交换机 WSLBridge 用于接下来使用<br><img src="https://lark-assets-prod-aliyun.oss-cn-hangzhou.aliyuncs.com/yuque/0/2023/png/12734244/1682340922356-resources/20070340/png/95c7933f-0734-4a47-b2c8-9fcdf1358fe6.png?OSSAccessKeyId=LTAI4GGhPJmQ4HWCmhDAn4F5&Expires=1682342741&Signature=voYzYw9HbIz5OU0qkqhCYnO/kqY=" alt="image.png"><br>在用户目录 %USERPROFILE% 下面创建一个配置文件 .wslconfig，按照如下配置方法设置网络</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[wsl2] </span><br><span class="line">networkingMode=bridged </span><br><span class="line">vmSwitch=WSLBridge </span><br><span class="line">ipv6=true</span><br></pre></td></tr></table></figure>
 <p><code>wsl --shutdown &amp;&amp; wsl</code> 重启 WSL2，搞定。</p>
 
@@ -388,9 +394,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2023-04-12 20:00:00 / 修改时间：18:28:19" itemprop="dateCreated datePublished" datetime="2023-04-12T20:00:00+08:00">2023-04-12</time>
+      <time title="创建时间：2023-04-12 20:00:00" itemprop="dateCreated datePublished" datetime="2023-04-12T20:00:00+08:00">2023-04-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-04-24 20:59:53" itemprop="dateModified" datetime="2023-04-24T20:59:53+08:00">2023-04-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -423,7 +435,8 @@
 <h3 id="小数的二进制表示"><a href="#小数的二进制表示" class="headerlink" title="小数的二进制表示"></a>小数的二进制表示</h3><p>类似，考虑以下表示法：</p>
 <p>$b_m b_{m-1} ··· b_1 b_0.b_{-1}b_{-2}···b_{-n+1}b_{-n}$，其中每个二进制数（或称为位）$b_{i}$的取值范围是【0和1】。</p>
 <p>这个表示方法描述的数值b定义如下：</p>
-<h5 id="d-x3D-sum-i-x3D-n-m-2-i-b-i"><a href="#d-x3D-sum-i-x3D-n-m-2-i-b-i" class="headerlink" title="$d&#x3D;\sum_{i&#x3D;-n}^m 2^i*b_i$"></a>$d&#x3D;\sum_{i&#x3D;-n}^m 2^i*b_i$</h5><p>此时，小数点左边的位的权为2的非负幂，点右边的位的权为2的负幂。</p>
+<p>$d&#x3D;\sum_{i&#x3D;-n}^m 2^i*b_i$</p>
+<p>此时，小数点左边的位的权为2的非负幂，点右边的位的权为2的负幂。</p>
 <blockquote>
 <p>例如：$101.11_{2}$<br>表示：$1\times2^2+0\times2^1+1\times2^0+1\times2^{-1}+1\times2^{-2}&#x3D;5\frac{3}{4}$</p>
 </blockquote>
@@ -602,7 +615,7 @@
 <td>!&#x3D;0</td>
 </tr>
 </tbody></table>
-<h4 id="1：规格化的值"><a href="#1：规格化的值" class="headerlink" title="1：规格化的值"></a>1：规格化的值</h4><p>这是最普通的情况。当exp的位既不全为0（数值为0），也不全为1（单精度8位&#x3D;255，双精度11位&#x3D;2047），都属于这种情况。</p>
+<h4 id="规格化的值"><a href="#规格化的值" class="headerlink" title="规格化的值"></a>规格化的值</h4><p>这是最普通的情况。当exp的位既不全为0（数值为0），也不全为1（单精度8位&#x3D;255，双精度11位&#x3D;2047），都属于这种情况。</p>
 <ol>
 <li>阶码字段：$E&#x3D;e-Bias$，以<strong>偏置biased</strong>形式表示的有符号整数，其中e是无符号数，其位表示为$e_{k-1}···e_{1}e_{0}$，Bias是一个等于$2^{k-1}-1$（单精度8位&#x3D;127，双精度11位&#x3D;1023）的偏置值。exp的取值范围则是：单精度<code>-126~+127</code>，双精度<code>-1022~+1023</code>。</li>
 <li>小数字段：$f,0&lt;&#x3D;f&lt;1,其二进制表示：0.f_{n-1}···f_{1}f_{0}$，也就是二进制小数点在最高有效位的左边。</li>
@@ -611,7 +624,7 @@
 <blockquote>
 <p>23位小数可以表示24位精度<br>$V&#x3D;(-1)^s\cdot M\cdot 2^E$</p>
 </blockquote>
-<h4 id="2：非规格化的值"><a href="#2：非规格化的值" class="headerlink" title="2：非规格化的值"></a>2：非规格化的值</h4><p>当阶码域全部为0，所表示的数就是<strong>非规格化</strong>形式。</p>
+<h4 id="非规格化的值"><a href="#非规格化的值" class="headerlink" title="非规格化的值"></a>非规格化的值</h4><p>当阶码域全部为0，所表示的数就是<strong>非规格化</strong>形式。</p>
 <ol>
 <li>阶码：$E&#x3D;1-Bias$</li>
 <li>尾数定义：$M&#x3D;f$,也就是小数字段的值，不包括隐含的开头1。</li>
@@ -624,7 +637,7 @@
 <li>提供了一种表示0的方法<br /><br>因为规格化数总是必须$M&gt;&#x3D;1$,因此就不能表示0。<br /><br>实际上+0.0的浮点表示的位模式为全0，符号为0，阶码全为0（满足非规格化值），小数域也全为0，这就得到了$M&#x3D;f&#x3D;0$。当符号位为1其他域全为0时，我们得到值-0.0。根据IEEE的浮点格式，认为0.0和-0.0在某些方面是不同的，而其他方面是相同的。</li>
 <li>表示那些非常接近0的数。它们提供了一种属性，称之为<strong>逐渐溢出（gradual underflow）</strong>，其中可能的数值分布均匀地接近于0.0</li>
 </ol>
-<h4 id="3：特殊值"><a href="#3：特殊值" class="headerlink" title="3：特殊值"></a>3：特殊值</h4><p>当阶码全为1时：</p>
+<h4 id="特殊值"><a href="#特殊值" class="headerlink" title="特殊值"></a>特殊值</h4><p>当阶码全为1时：</p>
 <ol>
 <li>小数域全为0，得到无穷值，s&#x3D;0是$+\infty$，s&#x3D;1是$-\infty$。无穷表示<strong>溢出</strong>的结果，比如2个非常大的数相乘，或者除以零。</li>
 <li>当小数域为非0，得到“NaN”（不是一个数，Not a Number）。一些运算的结果不能是实数或无穷，就会返回NaN，比如$\sqrt{-1}，\infty-\infty$。在某些应用中，也表示未初始化的数据。</li>

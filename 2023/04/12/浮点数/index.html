@@ -28,7 +28,7 @@
 <meta property="og:description" content="十进制表示法表示形式：             $d_m d_{m-1}···d_1d_0.d_{-1}d_{-2}···d_{-n}$，其中每个十进制数$d_i$的取值范围是【0~9】。 这个表示方法描述的数值d定义如下： $d&#x3D;\sum_{i&#x3D;-n}^m 10^i*d_i$ 数字权的定义与十进制小数点(.)相关，这意味着小数点左边的数字的权是10的非负幂，得到整数值，小数点">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-04-12T12:00:00.000Z">
-<meta property="article:modified_time" content="2023-04-12T10:28:19.331Z">
+<meta property="article:modified_time" content="2023-04-24T12:59:53.223Z">
 <meta property="article:author" content="耿鑫">
 <meta property="article:tag" content="前端,JavaScript,Vue,Wsl2,家庭影院">
 <meta name="twitter:card" content="summary">
@@ -114,7 +114,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%81%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">十进制表示法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E6%95%B0%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA"><span class="nav-number">2.</span> <span class="nav-text">小数的二进制表示</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#d-x3D-sum-i-x3D-n-m-2-i-b-i"><span class="nav-number">2.0.1.</span> <span class="nav-text">$d&#x3D;\sum_{i&#x3D;-n}^m 2^i*b_i$</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B2%BE%E5%BA%A6"><span class="nav-number">3.</span> <span class="nav-text">精度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IEEE%E6%B5%AE%E7%82%B9%E6%A0%87%E5%87%86"><span class="nav-number">4.</span> <span class="nav-text">IEEE浮点标准</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%EF%BC%9A%E8%A7%84%E6%A0%BC%E5%8C%96%E7%9A%84%E5%80%BC"><span class="nav-number">4.1.</span> <span class="nav-text">1：规格化的值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%EF%BC%9A%E9%9D%9E%E8%A7%84%E6%A0%BC%E5%8C%96%E7%9A%84%E5%80%BC"><span class="nav-number">4.2.</span> <span class="nav-text">2：非规格化的值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3%EF%BC%9A%E7%89%B9%E6%AE%8A%E5%80%BC"><span class="nav-number">4.3.</span> <span class="nav-text">3：特殊值</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BD%95%E9%98%B6%E7%A0%81%E9%9C%80%E8%A6%81%E5%81%8F%E7%BD%AE%E5%80%BC"><span class="nav-number">5.</span> <span class="nav-text">为何阶码需要偏置值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BD%95%E5%81%8F%E7%BD%AE%E5%80%BC%E6%98%AF-2-k-1-1"><span class="nav-number">6.</span> <span class="nav-text">为何偏置值是$2^{k-1}-1$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BD%95%E9%9D%9E%E8%A7%84%E6%A0%BC%E5%8C%96%E5%81%8F%E7%BD%AE%E5%80%BC%E6%98%AF1-Bias"><span class="nav-number">7.</span> <span class="nav-text">为何非规格化偏置值是1-Bias</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%81%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">十进制表示法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E6%95%B0%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA"><span class="nav-number">2.</span> <span class="nav-text">小数的二进制表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B2%BE%E5%BA%A6"><span class="nav-number">3.</span> <span class="nav-text">精度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IEEE%E6%B5%AE%E7%82%B9%E6%A0%87%E5%87%86"><span class="nav-number">4.</span> <span class="nav-text">IEEE浮点标准</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A7%84%E6%A0%BC%E5%8C%96%E7%9A%84%E5%80%BC"><span class="nav-number">4.1.</span> <span class="nav-text">规格化的值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%9E%E8%A7%84%E6%A0%BC%E5%8C%96%E7%9A%84%E5%80%BC"><span class="nav-number">4.2.</span> <span class="nav-text">非规格化的值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%B9%E6%AE%8A%E5%80%BC"><span class="nav-number">4.3.</span> <span class="nav-text">特殊值</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BD%95%E9%98%B6%E7%A0%81%E9%9C%80%E8%A6%81%E5%81%8F%E7%BD%AE%E5%80%BC"><span class="nav-number">5.</span> <span class="nav-text">为何阶码需要偏置值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BD%95%E5%81%8F%E7%BD%AE%E5%80%BC%E6%98%AF-2-k-1-1"><span class="nav-number">6.</span> <span class="nav-text">为何偏置值是$2^{k-1}-1$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BD%95%E9%9D%9E%E8%A7%84%E6%A0%BC%E5%8C%96%E5%81%8F%E7%BD%AE%E5%80%BC%E6%98%AF1-Bias"><span class="nav-number">7.</span> <span class="nav-text">为何非规格化偏置值是1-Bias</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -190,9 +190,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2023-04-12 20:00:00 / 修改时间：18:28:19" itemprop="dateCreated datePublished" datetime="2023-04-12T20:00:00+08:00">2023-04-12</time>
+      <time title="创建时间：2023-04-12 20:00:00" itemprop="dateCreated datePublished" datetime="2023-04-12T20:00:00+08:00">2023-04-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-04-24 20:59:53" itemprop="dateModified" datetime="2023-04-24T20:59:53+08:00">2023-04-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -225,7 +231,8 @@
 <h3 id="小数的二进制表示"><a href="#小数的二进制表示" class="headerlink" title="小数的二进制表示"></a>小数的二进制表示</h3><p>类似，考虑以下表示法：</p>
 <p>$b_m b_{m-1} ··· b_1 b_0.b_{-1}b_{-2}···b_{-n+1}b_{-n}$，其中每个二进制数（或称为位）$b_{i}$的取值范围是【0和1】。</p>
 <p>这个表示方法描述的数值b定义如下：</p>
-<h5 id="d-x3D-sum-i-x3D-n-m-2-i-b-i"><a href="#d-x3D-sum-i-x3D-n-m-2-i-b-i" class="headerlink" title="$d&#x3D;\sum_{i&#x3D;-n}^m 2^i*b_i$"></a>$d&#x3D;\sum_{i&#x3D;-n}^m 2^i*b_i$</h5><p>此时，小数点左边的位的权为2的非负幂，点右边的位的权为2的负幂。</p>
+<p>$d&#x3D;\sum_{i&#x3D;-n}^m 2^i*b_i$</p>
+<p>此时，小数点左边的位的权为2的非负幂，点右边的位的权为2的负幂。</p>
 <blockquote>
 <p>例如：$101.11_{2}$<br>表示：$1\times2^2+0\times2^1+1\times2^0+1\times2^{-1}+1\times2^{-2}&#x3D;5\frac{3}{4}$</p>
 </blockquote>
@@ -404,7 +411,7 @@
 <td>!&#x3D;0</td>
 </tr>
 </tbody></table>
-<h4 id="1：规格化的值"><a href="#1：规格化的值" class="headerlink" title="1：规格化的值"></a>1：规格化的值</h4><p>这是最普通的情况。当exp的位既不全为0（数值为0），也不全为1（单精度8位&#x3D;255，双精度11位&#x3D;2047），都属于这种情况。</p>
+<h4 id="规格化的值"><a href="#规格化的值" class="headerlink" title="规格化的值"></a>规格化的值</h4><p>这是最普通的情况。当exp的位既不全为0（数值为0），也不全为1（单精度8位&#x3D;255，双精度11位&#x3D;2047），都属于这种情况。</p>
 <ol>
 <li>阶码字段：$E&#x3D;e-Bias$，以<strong>偏置biased</strong>形式表示的有符号整数，其中e是无符号数，其位表示为$e_{k-1}···e_{1}e_{0}$，Bias是一个等于$2^{k-1}-1$（单精度8位&#x3D;127，双精度11位&#x3D;1023）的偏置值。exp的取值范围则是：单精度<code>-126~+127</code>，双精度<code>-1022~+1023</code>。</li>
 <li>小数字段：$f,0&lt;&#x3D;f&lt;1,其二进制表示：0.f_{n-1}···f_{1}f_{0}$，也就是二进制小数点在最高有效位的左边。</li>
@@ -413,7 +420,7 @@
 <blockquote>
 <p>23位小数可以表示24位精度<br>$V&#x3D;(-1)^s\cdot M\cdot 2^E$</p>
 </blockquote>
-<h4 id="2：非规格化的值"><a href="#2：非规格化的值" class="headerlink" title="2：非规格化的值"></a>2：非规格化的值</h4><p>当阶码域全部为0，所表示的数就是<strong>非规格化</strong>形式。</p>
+<h4 id="非规格化的值"><a href="#非规格化的值" class="headerlink" title="非规格化的值"></a>非规格化的值</h4><p>当阶码域全部为0，所表示的数就是<strong>非规格化</strong>形式。</p>
 <ol>
 <li>阶码：$E&#x3D;1-Bias$</li>
 <li>尾数定义：$M&#x3D;f$,也就是小数字段的值，不包括隐含的开头1。</li>
@@ -426,7 +433,7 @@
 <li>提供了一种表示0的方法<br /><br>因为规格化数总是必须$M&gt;&#x3D;1$,因此就不能表示0。<br /><br>实际上+0.0的浮点表示的位模式为全0，符号为0，阶码全为0（满足非规格化值），小数域也全为0，这就得到了$M&#x3D;f&#x3D;0$。当符号位为1其他域全为0时，我们得到值-0.0。根据IEEE的浮点格式，认为0.0和-0.0在某些方面是不同的，而其他方面是相同的。</li>
 <li>表示那些非常接近0的数。它们提供了一种属性，称之为<strong>逐渐溢出（gradual underflow）</strong>，其中可能的数值分布均匀地接近于0.0</li>
 </ol>
-<h4 id="3：特殊值"><a href="#3：特殊值" class="headerlink" title="3：特殊值"></a>3：特殊值</h4><p>当阶码全为1时：</p>
+<h4 id="特殊值"><a href="#特殊值" class="headerlink" title="特殊值"></a>特殊值</h4><p>当阶码全为1时：</p>
 <ol>
 <li>小数域全为0，得到无穷值，s&#x3D;0是$+\infty$，s&#x3D;1是$-\infty$。无穷表示<strong>溢出</strong>的结果，比如2个非常大的数相乘，或者除以零。</li>
 <li>当小数域为非0，得到“NaN”（不是一个数，Not a Number）。一些运算的结果不能是实数或无穷，就会返回NaN，比如$\sqrt{-1}，\infty-\infty$。在某些应用中，也表示未初始化的数据。</li>

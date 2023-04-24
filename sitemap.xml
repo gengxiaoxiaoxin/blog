@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gengxiaoxiaoxin.github.io/blog/2023/04/12/%E6%B5%AE%E7%82%B9%E6%95%B0/</loc>
+    
+    <lastmod>2023-04-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://gengxiaoxiaoxin.github.io/blog/2023/04/23/%E8%AE%BE%E7%BD%AEWsl2%E5%B1%80%E5%9F%9F%E7%BD%91%E8%AE%BF%E9%97%AE/</loc>
     
-    <lastmod>2023-04-23</lastmod>
+    <lastmod>2023-04-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -14,15 +23,6 @@
     <loc>https://gengxiaoxiaoxin.github.io/blog/2023/04/21/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2/</loc>
     
     <lastmod>2023-04-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gengxiaoxiaoxin.github.io/blog/2023/04/12/%E6%B5%AE%E7%82%B9%E6%95%B0/</loc>
-    
-    <lastmod>2023-04-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
