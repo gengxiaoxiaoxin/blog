@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gengxiaoxiaoxin.github.io/blog/7acc94ccec9b.html</loc>
+    
+    <lastmod>2023-05-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://gengxiaoxiaoxin.github.io/blog/2af794ce0d0d.html</loc>
     
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-05-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,16 +22,7 @@
   <url>
     <loc>https://gengxiaoxiaoxin.github.io/blog/5bd5f669faed.html</loc>
     
-    <lastmod>2023-04-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gengxiaoxiaoxin.github.io/blog/7acc94ccec9b.html</loc>
-    
-    <lastmod>2023-04-22</lastmod>
+    <lastmod>2023-05-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -40,31 +40,38 @@
 
   <url>
     <loc>https://gengxiaoxiaoxin.github.io/blog</loc>
-    <lastmod>2023-05-19</lastmod>
+    <lastmod>2023-05-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
-
-  
   <url>
-    <loc>https://gengxiaoxiaoxin.github.io/blog/categories/%E5%A8%B1%E4%B9%90/</loc>
-    <lastmod>2023-05-19</lastmod>
+    <loc>https://gengxiaoxiaoxin.github.io/blog/tags/Java/</loc>
+    <lastmod>2023-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://gengxiaoxiaoxin.github.io/blog/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2023-05-19</lastmod>
+    <loc>https://gengxiaoxiaoxin.github.io/blog/categories/%E5%A8%B1%E4%B9%90/</loc>
+    <lastmod>2023-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://gengxiaoxiaoxin.github.io/blog/categories/wsl2/</loc>
-    <lastmod>2023-05-19</lastmod>
+    <lastmod>2023-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gengxiaoxiaoxin.github.io/blog/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2023-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

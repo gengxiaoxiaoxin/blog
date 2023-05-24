@@ -20,15 +20,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gengxiaoxiaoxin.github.io","root":"/blog/","images":"/blog/images","scheme":"Pisces","darkmode":false,"version":"8.15.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/blog/js/config.js"></script>
 
-    <meta name="description" content="扬帆，启航">
+    <meta name="description" content="耿鑫的个人博客">
 <meta property="og:type" content="website">
-<meta property="og:title" content="gengxin&#39;s blog">
+<meta property="og:title" content="耿鑫的个人博客">
 <meta property="og:url" content="https://gengxiaoxiaoxin.github.io/blog/index.html">
-<meta property="og:site_name" content="gengxin&#39;s blog">
-<meta property="og:description" content="扬帆，启航">
+<meta property="og:site_name" content="耿鑫的个人博客">
+<meta property="og:description" content="耿鑫的个人博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="耿鑫">
-<meta property="article:tag" content="前端,JavaScript,Vue,Wsl2,家庭影院">
+<meta property="article:tag" content="JavaScript,Vue,Java,Go">
 <meta name="twitter:card" content="summary">
 
 
@@ -39,7 +39,7 @@
 <script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>gengxin's blog - vuer</title>
+<title>耿鑫的个人博客 - 一以贯之</title>
   
 
 
@@ -72,10 +72,10 @@
 
     <a href="/blog/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">gengxin's blog</h1>
+      <h1 class="site-title">耿鑫的个人博客</h1>
       <i class="logo-line"></i>
     </a>
-      <p class="site-subtitle" itemprop="description">vuer</p>
+      <p class="site-subtitle" itemprop="description">一以贯之</p>
   </div>
 
   <div class="site-nav-right">
@@ -120,7 +120,7 @@
     <img class="site-author-image" itemprop="image" alt="耿鑫"
       src="https://avatars.githubusercontent.com/u/29268441">
   <p class="site-author-name" itemprop="name">耿鑫</p>
-  <div class="site-description" itemprop="description">扬帆，启航</div>
+  <div class="site-description" itemprop="description">耿鑫的个人博客</div>
 </div>
 <div class="site-state-wrap animated">
   <nav class="site-state">
@@ -134,6 +134,10 @@
           <a href="/blog/categories/">
         <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -166,12 +170,12 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="gengxin's blog">
-      <meta itemprop="description" content="扬帆，启航">
+      <meta itemprop="name" content="耿鑫的个人博客">
+      <meta itemprop="description" content="耿鑫的个人博客">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | gengxin's blog">
+      <meta itemprop="name" content="undefined | 耿鑫的个人博客">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
@@ -194,7 +198,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-04-24 20:56:39" itemprop="dateModified" datetime="2023-04-24T20:56:39+08:00">2023-04-24</time>
+      <time title="修改时间：2023-05-24 11:31:20" itemprop="dateModified" datetime="2023-05-24T11:31:20+08:00">2023-05-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -216,12 +220,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="设置Wsl2局域网访问"><a href="#设置Wsl2局域网访问" class="headerlink" title="设置Wsl2局域网访问"></a>设置Wsl2局域网访问</h2><p>默认wsl2通过宿主机localhost可以访问到wsl2中的服务，但是局域网其他机器就无法访问了。<br>好在微软在新版本已经支持配置wsl2网卡了。</p>
-<h3 id="安装hype-v"><a href="#安装hype-v" class="headerlink" title="安装hype-v"></a>安装hype-v</h3><p>控制面板-开启windows功能-Hype-v</p>
-<h4 id="Hype-V虚拟交换机配置"><a href="#Hype-V虚拟交换机配置" class="headerlink" title="Hype-V虚拟交换机配置"></a>Hype-V虚拟交换机配置</h4><p>新建一个虚拟交换机 WSLBridge 用于接下来使用<br><img src="https://lark-assets-prod-aliyun.oss-cn-hangzhou.aliyuncs.com/yuque/0/2023/png/12734244/1682340922356-resources/20070340/png/95c7933f-0734-4a47-b2c8-9fcdf1358fe6.png?OSSAccessKeyId=LTAI4GGhPJmQ4HWCmhDAn4F5&Expires=1682342741&Signature=voYzYw9HbIz5OU0qkqhCYnO/kqY=" alt="image.png"><br>在用户目录 %USERPROFILE% 下面创建一个配置文件 .wslconfig，按照如下配置方法设置网络</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[wsl2] </span><br><span class="line">networkingMode=bridged </span><br><span class="line">vmSwitch=WSLBridge </span><br><span class="line">ipv6=true</span><br></pre></td></tr></table></figure>
-<p><code>wsl --shutdown &amp;&amp; wsl</code> 重启 WSL2，搞定。</p>
-
+          <h2 id="设置Wsl2局域网访问"><a href="#设置Wsl2局域网访问" class="headerlink" title="设置Wsl2局域网访问"></a>设置Wsl2局域网访问</h2><p>默认情况下，宿主机通过<code>http://localhost:port</code>可以访问到wsl2中的服务，但是同局域网其他机器是无法访问的。<br>之前的方案需要通过宿主机进行端口转发（门槛较高，且占用宿主机端口），不过好在微软在新版本已经支持配置wsl2的网卡了。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/blog/5bd5f669faed.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -255,12 +262,12 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="gengxin's blog">
-      <meta itemprop="description" content="扬帆，启航">
+      <meta itemprop="name" content="耿鑫的个人博客">
+      <meta itemprop="description" content="耿鑫的个人博客">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | gengxin's blog">
+      <meta itemprop="name" content="undefined | 耿鑫的个人博客">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
@@ -283,7 +290,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-04-22 21:21:10" itemprop="dateModified" datetime="2023-04-22T21:21:10+08:00">2023-04-22</time>
+      <time title="修改时间：2023-05-24 11:56:28" itemprop="dateModified" datetime="2023-05-24T11:56:28+08:00">2023-05-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -305,42 +312,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="AList"><a href="#AList" class="headerlink" title="AList"></a>AList</h2><p><a target="_blank" rel="noopener" href="https://alist.nn.ci/zh/">AList</a></p>
-<blockquote>
-<p>🗂️ 一个支持多种存储的文件列表程序，使用 Gin 和 Solidjs。</p>
-</blockquote>
-<p>参考官网的安装步骤，安装成功之后。在AList后台挂载上我们的阿里云盘Open账号。</p>
-<h3 id="设置开机自启"><a href="#设置开机自启" class="headerlink" title="设置开机自启"></a>设置开机自启</h3><h4 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h4><p>按照官方文档，使用Systemd管理。</p>
-<h4 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h4><p>在alist文件目录下新建一个<code>start_alist_v3.vbs</code>文件，然后复制快捷方式到<code>%userProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup</code>文件夹下。</p>
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Dim</span> ws</span><br><span class="line"></span><br><span class="line"><span class="keyword">Set</span> ws = Wscript.CreateObject(<span class="string">&quot;Wscript.Shell&quot;</span>)</span><br><span class="line"></span><br><span class="line">ws.run <span class="string">&quot;alist.exe server&quot;</span>,vbhide</span><br><span class="line"></span><br><span class="line">Wscript.quit</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="Rclone"><a href="#Rclone" class="headerlink" title="Rclone"></a>Rclone</h2><p>接下来开始安装Rclone（因为Jellyfin只支持磁盘，这一步将AList挂载为网络磁盘）</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><code>sudo -v ; curl https://rclone.org/install.sh | sudo bash</code></p>
-<h3 id="挂载AList-WebDav为磁盘"><a href="#挂载AList-WebDav为磁盘" class="headerlink" title="挂载AList-WebDav为磁盘"></a>挂载AList-WebDav为磁盘</h3><h4 id="添加AList配置文件"><a href="#添加AList配置文件" class="headerlink" title="添加AList配置文件"></a>添加AList配置文件</h4><p>rclone config<br>选择webdav类型，输入AList的链接，用户名密码，之后保存。<br><code>rclone mount AList:/ /mnt/media --allow-other --header &quot;Referer:&quot; --default-permissions --vfs-cache-mode full --vfs-read-chunk-size 5M --vfs-read-chunk-size-limit 1G --buffer-size 0 --vfs-cache-max-size 200G --cache-dir ~/rclone-cache/AList</code></p>
-<blockquote>
-<p>具体的参数自己可以去尝试，我在这里推荐几个从Rclone官方社区获得的针对云盘的最优配置。<br>vfs-cache-mode：full，加入读取缓存，这样观看4K电影时快进快退的体验会增加。<br>vfs-read-chunk-size 5M， 保证Jellyfin扫描媒体库时不会加载太大的文件，只需要读取一些文件头的数据即可。<br>buffer-size 0，现代电脑的性能都很强大了，缓存大小设置为0即可，减少媒体库扫描时带宽消耗。（打个比方，设置buffer-size 16MB，那么Jellyfin扫描媒体库时，一个4K的电影，正常来说只需要读取文件头部的一些信息就可以，但是此时Rclone会从阿里云额外读取16MB的缓存。）</p>
-</blockquote>
-<h3 id="设置开机自动挂载"><a href="#设置开机自动挂载" class="headerlink" title="设置开机自动挂载"></a>设置开机自动挂载</h3><h5 id="linux-1"><a href="#linux-1" class="headerlink" title="linux"></a>linux</h5><p>基于<code>SystemD </code><br><code>vim /etc/systemd/system/rclone.service</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Rclone</span><br><span class="line">Documentation=http://rclone.org/docs/</span><br><span class="line">After=network-online.target</span><br><span class="line">Requires=alist.service</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line"><span class="comment">#Set up environment</span></span><br><span class="line">Environment=MOUNT_DIR=/mnt/media</span><br><span class="line">Environment=CACHE_DIR=~/rclone-cache/AList</span><br><span class="line"></span><br><span class="line">ExecStart=rclone mount \</span><br><span class="line">          AList:/ <span class="string">&quot;<span class="variable">$&#123;MOUNT_DIR&#125;</span>&quot;</span> \</span><br><span class="line">          --cache-dir <span class="string">&quot;<span class="variable">$&#123;CACHE_DIR&#125;</span>&quot;</span> \</span><br><span class="line">          --network-mode \</span><br><span class="line">          --allow-other \</span><br><span class="line">          --read-only \</span><br><span class="line">          --default-permissions \</span><br><span class="line">          --vfs-cache-mode full \</span><br><span class="line">          --vfs-read-chunk-size 5M \</span><br><span class="line">          --vfs-read-chunk-size-limit 1G \</span><br><span class="line">          --buffer-size 0 \</span><br><span class="line">          --vfs-cache-max-size 200G \</span><br><span class="line">          --vfs-cache-max-age 360d \</span><br><span class="line">          --header <span class="string">&quot;Referer:&quot;</span></span><br><span class="line"></span><br><span class="line">ExecStop=fusermount -u <span class="string">&quot;<span class="variable">$&#123;MOUNT_DIR&#125;</span>&quot;</span></span><br><span class="line"></span><br><span class="line">Restart=always</span><br><span class="line">RestartSec=10</span><br><span class="line"></span><br><span class="line">User=root</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=default.target</span><br></pre></td></tr></table></figure>
-<p>设置开机自启动<br><code>systemctl enable rclone</code></p>
-<h5 id="windows-1"><a href="#windows-1" class="headerlink" title="windows"></a>windows</h5><p>在rclone目录下新建一个<code>start_rclone.vbs</code>文件，然后复制快捷方式到<code>%userProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup</code>文件夹下。</p>
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">command = <span class="string">&quot;rclone.exe mount alist:/ X: --cache-dir rclone-cache/alist --network-mode --allow-other --default-permissions --vfs-cache-mode full --vfs-cache-max-age 360d --vfs-read-chunk-size 5M --vfs-read-chunk-size-limit 1G --buffer-size 0 --vfs-cache-max-size 200G --fast-list --header &quot;&quot;Referer:&quot;&quot; --rc --rc-addr 0.0.0.0:5572 --rc-web-gui --rc-web-gui-no-open-browser --rc-no-auth &quot;</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line"><span class="keyword">Dim</span> ws</span><br><span class="line"></span><br><span class="line"><span class="keyword">Set</span> ws = Wscript.CreateObject(<span class="string">&quot;Wscript.Shell&quot;</span>)</span><br><span class="line"></span><br><span class="line">ws.run command,vbhide</span><br><span class="line"></span><br><span class="line">Wscript.quit</span><br></pre></td></tr></table></figure>
-
-<h2 id="Jellyfin"><a href="#Jellyfin" class="headerlink" title="Jellyfin"></a>Jellyfin</h2><h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>官网下载Jellyfin-Server在对应的系统安装。</p>
-<h3 id="配置Jellyfin服务器"><a href="#配置Jellyfin服务器" class="headerlink" title="配置Jellyfin服务器"></a>配置Jellyfin服务器</h3><p>设置-计划任务，确保关闭以下几项</p>
-<ul>
-<li>关键帧提取器</li>
-<li>提取章节图片</li>
-</ul>
-<p>设置-媒体库-管理媒体库，确保关闭以下几项</p>
-<ul>
-<li>章节图片-开启章节图片提取</li>
-<li>章节图片-媒体库扫描过程中解压章节图片</li>
-</ul>
-<p><strong>这几项设置会导致完整的读取文件，这对于本地磁盘的话没什么影响，但是现在是挂载的阿里云盘，会从阿里云盘下载大量数据，导致账号被风控。</strong></p>
-<p>之后，愉快的看片吧😁</p>
-
+          <p>如何快速通过AList挂载阿里云盘，配合Rclone挂载为虚拟磁盘，再加上Jellyfin搭建一套全免费的家庭影院系统。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/blog/7acc94ccec9b.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -374,12 +354,12 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="gengxin's blog">
-      <meta itemprop="description" content="扬帆，启航">
+      <meta itemprop="name" content="耿鑫的个人博客">
+      <meta itemprop="description" content="耿鑫的个人博客">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | gengxin's blog">
+      <meta itemprop="name" content="undefined | 耿鑫的个人博客">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
@@ -402,7 +382,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-04-24 20:59:53" itemprop="dateModified" datetime="2023-04-24T20:59:53+08:00">2023-04-24</time>
+      <time title="修改时间：2023-05-24 11:36:33" itemprop="dateModified" datetime="2023-05-24T11:36:33+08:00">2023-05-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -424,244 +404,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h3 id="十进制表示法"><a href="#十进制表示法" class="headerlink" title="十进制表示法"></a>十进制表示法</h3><p>表示形式：</p>
-<p>            $d_m d_{m-1}···d_1d_0.d_{-1}d_{-2}···d_{-n}$，其中每个十进制数$d_i$的取值范围是【0~9】。</p>
-<p>这个表示方法描述的数值d定义如下：</p>
-<p>$d&#x3D;\sum_{i&#x3D;-n}^m 10^i*d_i$</p>
-<p>数字权的定义与十进制小数点<strong>(.)</strong>相关，这意味着小数点左边的数字的权是10的非负幂，得到整数值，小数点右边数字的权是10的负幂，得到小数值。</p>
-<blockquote>
-<p>例如：$12.34_{10}$表示：$1\times10^1+2\times10^0+3\times10^{-1}+4\times10^{-2}&#x3D;12\frac{34}{100}$</p>
-</blockquote>
-<h3 id="小数的二进制表示"><a href="#小数的二进制表示" class="headerlink" title="小数的二进制表示"></a>小数的二进制表示</h3><p>类似，考虑以下表示法：</p>
-<p>$b_m b_{m-1} ··· b_1 b_0.b_{-1}b_{-2}···b_{-n+1}b_{-n}$，其中每个二进制数（或称为位）$b_{i}$的取值范围是【0和1】。</p>
-<p>这个表示方法描述的数值b定义如下：</p>
-<p>$d&#x3D;\sum_{i&#x3D;-n}^m 2^i*b_i$</p>
-<p>此时，小数点左边的位的权为2的非负幂，点右边的位的权为2的负幂。</p>
-<blockquote>
-<p>例如：$101.11_{2}$<br>表示：$1\times2^2+0\times2^1+1\times2^0+1\times2^{-1}+1\times2^{-2}&#x3D;5\frac{3}{4}$</p>
-</blockquote>
-<p>从可以看出，二进制小数点每向左移动一位相当于这个数除以2，向右移动一位相当于这个数乘2。</p>
-<blockquote>
-<p>例如：$101.11_{2}&#x3D;5\frac34$</p>
-<p>左移一位则：$10.111_{2}&#x3D;1\times2^1+0\times2^0+1\times2^{-1}+1\times2^{-2}+1\times2^{-3}&#x3D;2\frac{7}{8}$</p>
-<p>右移一位则：$1011.1_{2}&#x3D;1\times2^3+0\times2^2+1\times2^1+1\times2^0+1\times2^{-1}&#x3D;11\frac12$</p>
-</blockquote>
-<h3 id="精度"><a href="#精度" class="headerlink" title="精度"></a>精度</h3><p>假定我们只考虑有限长度的编码，那么十进制表示法不能准确的表达$\frac13和\frac57$这样的数，类似地，小数的二进制表示法只能表示那些能够被写成$x*2^y$的数。其他的值只能被近似的表示。</p>
-<blockquote>
-<p>就是说二进制小数是形如 $\frac12 + \frac14 + \frac18 + \frac1{16}$等组合成的，而小数实际是连续而无限的，二进制小数却是离散的，必定存在大量无法表达的数值。</p>
-<p>例如：$\frac15$可以用十进制表示为0.20，但是它并不能准确的表示为一个二进制小数，再怎么加长精度也不行，只能近似的表示它</p>
-<p>案例，海湾战争中的一个拦截导弹系统中使用0.1秒的间隔作为计数器增加，而0.1由于无法准确用二进制表示，而该系统又使用了一个累计式计数法，结果就是长时间运行后，累计误差变的无法接受。结果就是拦截导弹系统压根拦截不到导弹。 对于这种情况，应当是有相对时间，而不是使用固定间隔。</p>
-</blockquote>
-<p>增加二进制表示的长度可以提高表示的精度：</p>
-<table>
-<thead>
-<tr>
-<th align="center">二进制表示</th>
-<th align="center">值</th>
-<th align="center">十进制</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">0.0</td>
-<td align="center">$\frac02$</td>
-<td align="center">0.0</td>
-</tr>
-<tr>
-<td align="center">0.01</td>
-<td align="center">$\frac14$</td>
-<td align="center">0.25</td>
-</tr>
-<tr>
-<td align="center">0.0011</td>
-<td align="center">$\frac3{16}$</td>
-<td align="center">0.1875</td>
-</tr>
-<tr>
-<td align="center">0.001101</td>
-<td align="center">$\frac{13}{64}$</td>
-<td align="center">0.203125</td>
-</tr>
-<tr>
-<td align="center">0.00110011</td>
-<td align="center">$\frac{51}{256}$</td>
-<td align="center">0.19921848</td>
-</tr>
-</tbody></table>
-<h3 id="IEEE浮点标准"><a href="#IEEE浮点标准" class="headerlink" title="IEEE浮点标准"></a>IEEE浮点标准</h3><p>表达形式：$V&#x3D;(-1)^s \cdot M \cdot 2^E$</p>
-<ul>
-<li>$s$：<strong>符号(sign)</strong>：决定这个数是负数（s&#x3D;1）还是正数（s&#x3D;0），对于数0的符号位作为特殊情况解释</li>
-<li>$M$：<strong>尾数(significand)</strong>：M是一个二进制小数，范围是<code>1~2-ε</code>，或者是<code>0~1-ε</code>,</li>
-<li>$E$：<strong>阶码(exponent)</strong>：E的作用对浮点数加权，这个权重是2的E次幂（E可能是负数）。</li>
-</ul>
-<p>将浮点数的位表示划分为三个字段，分别对上述3个值进行编码：</p>
-<ul>
-<li>一个单独的符号位$s$直接编码符号$s$</li>
-<li>$k$位的阶码字段$exp&#x3D;e_{k-1}e···e_1e_0$编码阶码$E$</li>
-</ul>
-<blockquote>
-<p>注： <code>1-ε(epsilon)</code>表示形如$0.11···1_2$这样刚好小于1的数。</p>
-</blockquote>
-<p>如下，float,double</p>
-<table>
-<thead>
-<tr>
-<th>float</th>
-<th>k&#x3D;8</th>
-<th>n&#x3D;23</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>s(31)</td>
-<td>exp(30-23)</td>
-<td>frac(22-0)</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>double</th>
-<th>k&#x3D;11</th>
-<th>n&#x3D;52</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>s(63)</td>
-<td>exp(62-52)</td>
-<td>frac(51-0)</td>
-</tr>
-</tbody></table>
-<p>给定位表示之后，根据exp的值，被编码的值可以分为3种（最后一种情况有俩个变种），比如下面float单精度的情况：</p>
-<table>
-<thead>
-<tr>
-<th>规格化</th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>s</td>
-<td>!&#x3D;0 &amp; !&#x3D;255</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>f</td>
-</tr>
-<tr>
-<td>非规格化</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>s</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>f</td>
-</tr>
-<tr>
-<td>无穷大</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>s</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>23位全为0</td>
-</tr>
-<tr>
-<td>NaN</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>s</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>!&#x3D;0</td>
-</tr>
-</tbody></table>
-<h4 id="规格化的值"><a href="#规格化的值" class="headerlink" title="规格化的值"></a>规格化的值</h4><p>这是最普通的情况。当exp的位既不全为0（数值为0），也不全为1（单精度8位&#x3D;255，双精度11位&#x3D;2047），都属于这种情况。</p>
-<ol>
-<li>阶码字段：$E&#x3D;e-Bias$，以<strong>偏置biased</strong>形式表示的有符号整数，其中e是无符号数，其位表示为$e_{k-1}···e_{1}e_{0}$，Bias是一个等于$2^{k-1}-1$（单精度8位&#x3D;127，双精度11位&#x3D;1023）的偏置值。exp的取值范围则是：单精度<code>-126~+127</code>，双精度<code>-1022~+1023</code>。</li>
-<li>小数字段：$f,0&lt;&#x3D;f&lt;1,其二进制表示：0.f_{n-1}···f_{1}f_{0}$，也就是二进制小数点在最高有效位的左边。</li>
-<li>尾数定义：$M&#x3D;1+f$,这种方式也叫作<strong>隐含的以1开头的（implied leading 1）</strong>表示，二进制表示：$1.f_{n-1}···f_{1}f_{0}$。这是因为我们总是可以通过调整指数来把小数表示为1.xxx的形式，既然第一位一直是1，则可以略去不显示，从而额外获得一位有效位。</li>
-</ol>
-<blockquote>
-<p>23位小数可以表示24位精度<br>$V&#x3D;(-1)^s\cdot M\cdot 2^E$</p>
-</blockquote>
-<h4 id="非规格化的值"><a href="#非规格化的值" class="headerlink" title="非规格化的值"></a>非规格化的值</h4><p>当阶码域全部为0，所表示的数就是<strong>非规格化</strong>形式。</p>
-<ol>
-<li>阶码：$E&#x3D;1-Bias$</li>
-<li>尾数定义：$M&#x3D;f$,也就是小数字段的值，不包括隐含的开头1。</li>
-</ol>
-<blockquote>
-<p>对于非规格化值为何要这样设置偏置值？<br>使阶码值为 $1-Bias$而不是$-Bias$似乎是违反直觉的。（为什么违反直觉？）<br>这种方式提供了一种从非规格化值平滑转移到规格化值的方法。</p>
-</blockquote>
-<p>非规格化数有2个用途。</p>
-<ol>
-<li>提供了一种表示0的方法<br /><br>因为规格化数总是必须$M&gt;&#x3D;1$,因此就不能表示0。<br /><br>实际上+0.0的浮点表示的位模式为全0，符号为0，阶码全为0（满足非规格化值），小数域也全为0，这就得到了$M&#x3D;f&#x3D;0$。当符号位为1其他域全为0时，我们得到值-0.0。根据IEEE的浮点格式，认为0.0和-0.0在某些方面是不同的，而其他方面是相同的。</li>
-<li>表示那些非常接近0的数。它们提供了一种属性，称之为<strong>逐渐溢出（gradual underflow）</strong>，其中可能的数值分布均匀地接近于0.0</li>
-</ol>
-<h4 id="特殊值"><a href="#特殊值" class="headerlink" title="特殊值"></a>特殊值</h4><p>当阶码全为1时：</p>
-<ol>
-<li>小数域全为0，得到无穷值，s&#x3D;0是$+\infty$，s&#x3D;1是$-\infty$。无穷表示<strong>溢出</strong>的结果，比如2个非常大的数相乘，或者除以零。</li>
-<li>当小数域为非0，得到“NaN”（不是一个数，Not a Number）。一些运算的结果不能是实数或无穷，就会返回NaN，比如$\sqrt{-1}，\infty-\infty$。在某些应用中，也表示未初始化的数据。</li>
-</ol>
-<h3 id="为何阶码需要偏置值"><a href="#为何阶码需要偏置值" class="headerlink" title="为何阶码需要偏置值"></a>为何阶码需要偏置值</h3><p>假使我们要比较2个浮点数大小：</p>
-<ol>
-<li>判断s符号位的大小，先确定正数还是负数</li>
-<li>阶码部分，如果阶码部分也区分正负数，那么我们就还需要判断阶码首位的符号。</li>
-</ol>
-<p>比较2次符号位，加大了计算的复杂度，那么如果我们把阶码部分统一转换为非负数，则不需要判断阶码的符号问题，也即是<strong>移码</strong></p>
-<h3 id="为何偏置值是-2-k-1-1"><a href="#为何偏置值是-2-k-1-1" class="headerlink" title="为何偏置值是$2^{k-1}-1$"></a>为何偏置值是$2^{k-1}-1$</h3><p>考虑float单精度浮点数：<br />8位有符号数的取值范围：[-128,127]，为使e为非负数，加上128得到[0,255]。<br />规定阶码0（非规格化）和255（特殊值）表达特定情况，那么实际e的范围就是[1,244]，指数范围则是[-127,126]，设定偏置值是127，则指数范围是[-126,127]</p>
-<blockquote>
-<p>1.偏移值为127时，绝对值范围大致是：1.2x10^(-38)~3.4x10^(+38)；</p>
-<p>2.如果偏移值取为128时， 绝对值范围大致是：5.9x10^(-39)~1.7x10^(+38)；</p>
-</blockquote>
-<p>可见偏移值取127时，上下范围基本对称，相对合理点。127时最大值也更大</p>
-<blockquote>
-<p>指数也表示正负，为什么不直接存补码呢？<br>只能说却是设计精妙，补码的-1&#x3D;11111111，而指数域全1是作为特殊值的，所以是相冲突的。</p>
-</blockquote>
-<h3 id="为何非规格化偏置值是1-Bias"><a href="#为何非规格化偏置值是1-Bias" class="headerlink" title="为何非规格化偏置值是1-Bias"></a>为何非规格化偏置值是1-Bias</h3><blockquote>
-<p>非规格化数的取值范围在 1&#x2F;512 到 7&#x2F;512之间，而规格化数最小为8&#x2F;512，这个平滑转变归功于非规格化E的定义为1-Bias，这样就补偿了非规格化数隐含的1，从而可以平滑过渡。</p>
-<p>所谓补偿了1，咋补偿的呢？隐含的1相当于是要求有效位至少左移了1位。左移一位就是乘以2，反映在指数上就是指数的数值+1。所以-Bias 就变成了 1 - Bias 。</p>
-</blockquote>
-
+          <p>为何计算机中的浮点数直接运算会产生溢出呢？</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/blog/2af794ce0d0d.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
